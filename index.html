@@ -83,7 +83,7 @@ src="https://www.facebook.com/tr?id=686430014825310&ev=PageView&noscript=1"
 </script>
 </head>
 
-<body class="index">
+<body class="index" ng-controller="AppController" ng-init="init()">
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5F596V"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -210,27 +210,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="row">
        <div class="col-lg-12 text-center">
         <h1 class="section-heading text-center"><a href="http://www.juicecrawl.com/testimonials.html"> Testimonials</h1></a>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-            <img src="img/testimonials/jake.png" style="height:200px" class="img-responsive center-block" alt="jake">
+            
+            <div ng-repeat="testimonial in testimonials track by $index" class="col-md-4 col-sm-12 col-xs-12">
+                <img src="img/testimonials/{{ testimonial.image }}" style="height:200px" class="img-responsive center-block" alt="{{ testimonial.image }}">
                 <div>
-                    <h4>Jake G.</h4>
-                    <p class="text-muted text-center">"Had the time of my life...Wow I have never had so many varieties of juice and SO MUCH OF IT!"</p>
+                    <h4>{{testimonial.name}}</h4>
+                    <p class="text-muted text-center">{{testimonial.quote}}</p>
                 </div>               
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-            <img src="img/testimonials/shameka.png" style="height:200px" class="img-responsive center-block" alt="shameka">
-                <div>
-                    <h4>Shameka K.</h4>
-                    <p class="text-muted text-center">"Everyone should try it at least once. I discovered great NYC juice bars that I didn't even know existed, and I made some new friends."</p>
-                </div>               
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-            <img src="img/testimonials/anne.png" style="height:200px" class="img-responsive center-block" alt="jake">
-                <div>
-                    <h4>Anne M.</h4>
-                    <p class="text-muted text-center">"What a blast! I absolutely LOVE these events and look forward to going to more. I get to meet new people, connect with like minded health lovers, and I feel amazing drinking juice all day."</p>
-                </div>               
-            </div>
+            
+
        </div>
       </div>
  <!-- 
