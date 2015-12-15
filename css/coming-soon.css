@@ -1,0 +1,52 @@
+.event-title p{
+font-size:20px;
+}
+
+#comingsoon a {
+    color: #1ecc1a;
+    text-decoration: none;
+}
+
+#comingsoon a:hover{
+	color: #fed136;
+	text-decoration: none;
+}
+
+#social ul{
+     font-size: 2.8em;
+}
+
+#socialicons a{
+	color: #BEBEBE;
+}
+
+#social ul li .fa.fa-twitter:hover{
+    
+    text-decoration: none;
+    color: #00aced;
+}
+
+#social ul li .fa.fa-instagram:hover{
+    
+    text-decoration: none;
+    color: rgba(131, 180, 233, 1);
+}
+
+
+#social ul li .fa.fa-facebook:hover{
+
+    text-decoration: none;
+    color: #3B5998;
+}
+
+#social ul li .fa.fa-google-plus:hover{
+
+    text-decoration: none;
+    color: red;
+}
+
+#social ul li .fa.fa-youtube:hover{
+
+    text-decoration: none;
+    color: red;
+}

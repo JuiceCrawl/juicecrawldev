@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Juice Crawl">
+    <meta name="keywords" content="juice, health, new york, fun, socialize, exercise">
+    <meta name="author" content="EKG">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/app-responsive.css">-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>Juice Crawl</title>
+    
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-0.11.2.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--
+    <script type="text/javascript" src="js/holder.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    -->
+
+  </head>
+  <body ng-controller="AppController" ng-init="openSub()">
+
+
+    <div class="container-fluid">
+
+        <script type="text/ng-template" id="myModalContent.html">
+            
+            <div class="modal-body">
+                <button type="button" class="close pull-right" ng-click="cancel()" aria-hidden="true">&times;</button>
+                <h4 class="text-center">Get all the juicy details!</h4>
+                <div id="mc_embed_signup">
+                    <form id="mc-embedded-subscribe-form" class="validate" action="//juicecrawl.us9.list-manage.com/subscribe/  post?u=724da0297c9eaf99cedb55c09&amp;id=0e0eeacbf5" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                        <div class="input-group input-group-lg">
+                            <input id="email mce-EMAIL" name="EMAIL" type="email" class="form-control" placeholder="email address" required>
+                            <!-- <input tabindex="-1" name="b_724da0297c9eaf99cedb55c09_0e0eeacbf5" type="text" value=""/> -->
+                            <span class="input-group-btn">
+                                <button id="mc-embedded-subscribe" class="btn btn-success" type="submit" name="subscribe" >Subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div><!-- /input-group -->
+            </div>
+            
+        </script>
+
+        <section class="row section-0 hidden-xs">
+            <div class="col-md-4 text-center">
+                <div class="border-box">
+                    <h4 class="text-success"><strong>Join the next Juice Crawl:</strong></h4>
+                    <p class="lead color-ccc">Celebrate St. Patrick's Day Early With Green Juice</p>
+                    <!-- <a href="">More</a> -->
+                    <!-- <hr class="short-line"> -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="panel panel-default center-block">
+                                <div class="panel-heading">Saturday</div>
+                                <div class="panel-body">
+                                    14
+                                </div>
+                                <div class="panel-footer">march 2015</div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3 text-center white time">
+                            <div class="fa fa-clock-o"></div>
+                            <p class="">1:00 PM</p>
+                        </div>
+                        <div class="col-md-4 place white">
+                            <p class="">Reebok Fithub,<br>Union Square,<br>New York, NY<br><small><a href="https://www.google.com/maps/place/Reebok+FitHub+-+Union+Square/@40.735546,-73.991912,15z/data=!4m2!3m1!1s0x0:0x7d84b5e14146c065?sa=X&ei=5O_tVJbtOpLe7AaosICAAg&ved=0CH0Q_BIwCg" target="_blank">View map</a></small></p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/logo-1.png" class="center-block">
+            </div>
+            <div class="col-md-4 vertical-center text-center">
+                <a href="http://www.brownpapertickets.com/event/1377116" target="_blank" class="btn btn-info btn-lg"><strong>Purchase Tickets*</strong> <i class="fa fa-angle-double-right"></i></a><br>
+            </div>
+            <br>
+            <p class="col-md-12 offer white"><!--*first 10 to signup recieve a FREE weeklong Bikram Yoga Pass ($60 value) --></p>
+        </section>
+
+        <section class="row section-0 visible-xs">
+            <div class="col-md-4">
+                <img src="images/logo-1.png" class="center-block img-responsive">
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="border-box">
+                    <h4 class="text-success"><strong>Join the next Juice Crawl:</strong></h4>
+                    <p class="lead color-ccc">Celebrate St. Patrick's Day Early With Green Juice</p>
+                    <!-- <a href="">More</a> -->
+                    <!-- <hr class="short-line"> -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="panel panel-default center-block">
+                                <div class="panel-heading">Saturday</div>
+                                <div class="panel-body">
+                                    14
+                                </div>
+                                <div class="panel-footer">march 2015</div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3 text-center white time">
+                            <div class="fa fa-clock-o"></div>
+                            <p class="">1:00 PM</p>
+                        </div>
+                        <div class="col-md-4 place white">
+                            <p class="">Reebok Fithub,<br>Union Square,<br>New York, NY<br><small><a href="https://www.google.com/maps/place/Reebok+FitHub+-+Union+Square/@40.735546,-73.991912,15z/data=!4m2!3m1!1s0x0:0x7d84b5e14146c065?sa=X&ei=5O_tVJbtOpLe7AaosICAAg&ved=0CH0Q_BIwCg" target="_blank">View map</a></small></p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-md-4 vertical-center text-center">
+                <a href="http://jcmarch2015.brownpaperticket.com/" target="_blank" class="btn btn-info btn-lg"><strong>Purchase Tickets*</strong> <i class="fa fa-angle-double-right"></i></a><br>
+            </div>
+            <br><br><br>
+            <p class="col-md-12 offer white"><!--*first 10 to signup recieve a FREE weeklong Bikram Yoga Pass ($60 value) --></p>
+        </section>
+
+        <section class="row about-juicecrawl text-center ">
+            <h2>what is a juice crawl?</h2>
+            <p class="center-block">Juice Crawl, a play on the traditional pub crawl, is a healthy fun social event in which participants drink cold-pressed juice at a series of juice bars.</p>
+            <p class="center-block">Experience a hangover that leaves you feeling energized and healthy!</p>
+
+            <div class="video">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/SGOc9P4Ynm8" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="row whos-involved text-center text-muted center-block" style="">
+                <h2 class="white">Our Partners</h2>
+                <div class="col-md-2">
+                    <img width="150px" class="img-responsive center-block" src="images/luli.jpg">
+                    <br class="visible-xs">
+                </div>
+
+                <div class="col-md-2">
+                <br>
+                    <img width="150px" class="img-responsive center-block" src="images/liquiteria.png">
+                    <br class="visible-xs">
+                </div>
+                <div class="col-md-2">
+                    <br>
+                    <img class="img-responsive center-block" src="images/jplogo.png">
+                    <br class="visible-xs">
+                </div>
+                <div class="col-md-2">
+                    <img width="150px" class="img-responsive center-block" src="images/terri.png">
+                    <br class="visible-xs">
+                </div>
+                <div class="col-md-2">
+                    <img width="150px" class="img-responsive center-block" src="images/hse_of_juice_logo.jpg">
+                    <br class="visible-xs">
+                </div>
+                <div class="col-md-2">
+                    <br>
+                    <img width="150px" class="img-responsive center-block" src="images/reebok_logo.png">
+                    <br class="visible-xs">
+                </div>
+            </div>
+
+            <div class="what-you-get center-block">
+                <h3>What you get<br><small>for one ticket</small></h3>
+                <div class="icons center-block">
+                    <div class="row other-icons">
+                        <div class="col-md-2">
+                            <img src="images/juice.svg">
+                            <div class="text-justify">
+                                Lots of juice. Tons of samples of preselected juices. <div class="text-muted lead text-info text-center">($45 value)</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/workout.svg">
+                            <div>
+                                A short high-intensity workout. <div class="text-muted lead text-info text-center">($20 value)</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/coupon.svg">
+                            <div>
+                                Coupons for discounts on future juice purchases. <div class="text-muted lead text-info text-center">($20 value)</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="images/shirt.svg">
+                            <div>
+                                Juice Crawl shirt. <div class="lead text-muted text-info text-center">($30 value)</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <img src="images/jar.svg">
+                            <div>
+                                Juice Crawl mini mason jar. <div class="text-muted lead text-info text-center">($10 value)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row partner-icons center-block">
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/image10.png">
+                            <div class="text-justify">
+                                A free pass to Reebok Ambassador Michele Gordon aka Miss Motivational's CardioParty class. 
+                                <div class="text-muted lead text-info text-center">($25 value)</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="center-block">
+                                <img class="img-responsive" src="images/hse_of_juice.png">
+                            </div>
+                            <div class="text-justify">
+                                Following our green theme, the best dressed receives a St. Paddies Day Boozy Detox featuring a collection of St. Pat's day themed juices from House of Juice and a ticket to a House of Juice tasting event. <div class="text-muted lead text-info text-center">($60 value)</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/bikram_yoga.gif">
+                            <div class="text-justify">
+                                For the first 10 to sign up, a free week-long pass to any Manhattan location of Bikram Yoga NYC. 
+                                <div class="text-muted lead text-info text-center">($60 value)</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row lead text-center">
+                        <i class="fa fa-plus"></i> Lots of fun & new friends.<br> 
+                        <span class="text-muted text-info">(priceless)</span> 
+                    </div>
+
+                    <div class="text-center">
+                        <span class="total-value text-success">Total value of $270!</span><br><br>
+                        <a href="http://jcmarch2015.brownpaperticket.com/" target="_blank" class="btn btn-info btn-lg"><strong>Purchase Tickets</strong></a><br><br>
+                    </div>
+
+                    
+                </div>
+                
+                
+
+            </div>
+            
+        </section>
+       
+        <section class="row media-partners text-center text-muted hidden-xs">
+            <h2>media coverage</h2>
+            <div class="col-md-12 center-block" style="height: 170px">
+                <carousel interval="5000">
+                    <slide>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="http://www.foodrepublic.com/2014/10/08/nyc-bladders-brace-citys-first-juice-crawl" target="_blank"><img height="20%" class="img-responsive center-block" src="images/food_republic_logo.png"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="http://www.bedfordandbowery.com/2014/10/bushwickers-march-against-gentrification-lower-east-sider-against-the-lowline/" target="_blank"><img style="padding-top: 15%" class="img-responsive center-block" src="images/bedford_and_bowery.png"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="http://bodylocal.com/events/nycs-first-ever-juice-crawl/" target="_blank"><img style="padding-top: 10%" class="img-responsive center-block" src="images/body_local.png"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="http://gothamist.com/2014/10/17/weekend_food_events_nyc.php" target="_blank"><img class="img-responsive center-block" src="images/gothamist_logo.png"></a>
+                            </div>
+                        </div>
+                    </slide>
+                    <slide>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="http://ny.eater.com/2014/10/18/6998035/festivals-galore-yotam-ottlenghis-new-book-and-more" target="_blank"><img class="img-responsive center-block" src="images/ny_eater.png"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="http://ny.racked.com/archives/2014/10/16/upcoming_events_with_courtshop_tavi_gevinson_and_more.php" target="_blank"><img class="img-responsive center-block" src="images/racked_logo.png"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="http://blogs.villagevoice.com/forkintheroad/2014/10/this_weekends_five_best_food_events_11.php" target="_blank"><img class="img-responsive center-block" src="images/village_voice_logo.png"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="http://www.local802afm.org/2014/11/your-body-is-your-instrument/" target="_blank"><img class="img-responsive center-block" width="50%" src="images/local802logo.jpg"></a>
+                            </div>
+                        </div>
+                    </slide>
+
+                </carousel>
+                
+            </div>
+        </section>
+
+        <section class="row media-partners text-center text-muted visible-xs">
+            <h2>media coverage</h2>
+            <div class="" style="height: 220px">
+                <carousel interval="1000">
+                    <slide>
+                        <a href="http://www.foodrepublic.com/2014/10/08/nyc-bladders-brace-citys-first-juice-crawl" target="_blank"><img height="20%" class="img-responsive center-block" src="images/food_republic_logo.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://www.bedfordandbowery.com/2014/10/bushwickers-march-against-gentrification-lower-east-sider-against-the-lowline/" target="_blank"><img style="padding-top: 15%" class="img-responsive center-block" src="images/bedford_and_bowery.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://bodylocal.com/events/nycs-first-ever-juice-crawl/" target="_blank"><img style="padding-top: 10%" class="img-responsive center-block" src="images/body_local.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://gothamist.com/2014/10/17/weekend_food_events_nyc.php" target="_blank"><img class="img-responsive center-block" src="images/gothamist_logo.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://ny.eater.com/2014/10/18/6998035/festivals-galore-yotam-ottlenghis-new-book-and-more" target="_blank"><img class="img-responsive center-block" src="images/ny_eater.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://ny.racked.com/archives/2014/10/16/upcoming_events_with_courtshop_tavi_gevinson_and_more.php" target="_blank"><img class="img-responsive center-block" src="images/racked_logo.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://blogs.villagevoice.com/forkintheroad/2014/10/this_weekends_five_best_food_events_11.php" target="_blank"><img class="img-responsive center-block" src="images/village_voice_logo.png"></a>
+                    </slide>
+                    <slide>
+                        <a href="http://www.local802afm.org/2014/11/your-body-is-your-instrument/" target="_blank"><img class="img-responsive center-block" width="50%" src="images/local802logo.jpg"></a>
+                    </slide>
+
+                </carousel>
+                
+            </div>
+        </section>
+      
+        <footer class="row">
+
+            <div class="col-md-4 text-center">
+
+                <br>
+                <p><i class="fa fa-phone"></i>&nbsp;&nbsp; <a href="tel:908-758-4297">(908)-7-JUICY-7</a></p>
+                <p><i class="fa fa-envelope"></i>&nbsp;&nbsp; <a href="mailto:anna@juicecrawl.com">anna [at] juicecrawl [dot] com</a></p>
+
+                <!-- <ul class="">
+                    <li></li>
+                    <li><i class="fa fa-envelope"></i> <a href="mailto:anna@juicecrawl.com">anna(@)juicecrawl(.)com</a></li>
+                </ul> -->
+                
+            </div>
+
+            <br class="visible-xs">
+
+            <div class="col-md-4">
+                <h4 class="white text-center">Get all the juicy details!</h4>
+                <div id="mc_embed_signup">
+                    <form id="mc-embedded-subscribe-form" class="validate" action="//juicecrawl.us9.list-manage.com/subscribe/  post?u=724da0297c9eaf99cedb55c09&amp;id=0e0eeacbf5" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                        <div class="input-group input-group-lg">
+                            <input id="email mce-EMAIL" name="EMAIL" type="email" class="form-control" placeholder="email address" required>
+                            <!-- <input tabindex="-1" name="b_724da0297c9eaf99cedb55c09_0e0eeacbf5" type="text" value=""/> -->
+                            <span class="input-group-btn">
+                                <button id="mc-embedded-subscribe" class="btn btn-success" type="submit" name="subscribe" >Subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div><!-- /input-group -->
+                
+                 
+            </div>
+            
+            
+            <div class="col-md-4 hidden-xs">
+                <!-- <br>
+                <img src="images/logo.jpg" class="logo clearfix center-block">
+                <hr class="short-line" style="border-color: #333"> -->
+                <br>
+                
+                <ul class="linear">
+                    <li><a href="https://twitter.com/JuiceCrawl" target="_blank" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.facebook.com/JuiceCrawl" target="_blank" class="fa fa-facebook"></a></li>
+                    <li><a href="http://instagram.com/juicecrawl" target="_blank" class="fa fa-instagram"></a></li>
+                    <li><a href="https://plus.google.com/+juicecrawl" class="fa fa-google-plus"></a></li>
+
+                    <li><a href="http://www.youtube.com/subscription_center?add_user=JUICECRAWL" class="fa fa-youtube"></a></li>
+                </ul>
+                <!-- <p class="text-center">&copy; 2015</p> -->
+            </div>
+            
+            <div class="col-md-4 visible-xs hidden-md">
+                <!-- <br>
+                <img src="images/logo.jpg" class="logo clearfix center-block">
+                <hr class="short-line" style="border-color: #333"> -->
+                <br>
+                <h4 class="text-center">Social</h4>
+                <ul class="linear" style="font-size: 1.4em;">
+                    <li><a href="https://twitter.com/JuiceCrawl" target="_blank" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.facebook.com/JuiceCrawl" target="_blank" class="fa fa-facebook"></a></li>
+                    <li><a href="http://instagram.com/juicecrawl" target="_blank" class="fa fa-instagram"></a></li>
+                    <li><a href="https://plus.google.com/+juicecrawl" class="fa fa-google-plus"></a></li>
+
+                    <li><a href="http://www.youtube.com/subscription_center?add_user=JUICECRAWL" class="fa fa-youtube"></a></li>
+                </ul>
+                <!-- <p class="text-center">&copy; 2015</p> -->
+            </div>
+        </footer>
+        
+
+    </div>
+      
+  </body>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54280787-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+</html>

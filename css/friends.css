@@ -1,0 +1,12 @@
+#friends img{
+	width: 126px;
+	height: 126px;
+	
+}
+
+#friends .col-md-2 .col-sm-3 .col-xs-4 .col-lg-10 .col-md-10 .col-sm-10 .col-xs-10{
+    padding-right: 15px;
+    padding-left:  15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }

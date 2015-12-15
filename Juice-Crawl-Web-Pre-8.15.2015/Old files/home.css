@@ -1,0 +1,68 @@
+
+body{font:18px Helvetica,Arial,sans-serif; background-color: #c1e222; 
+    background-image: url(greenparty2.jpg); background-repeat: repeat-x; 
+    background-attachment: fixed; background-position: bottom;
+/*backup fading background color below if need*/
+/* IE10 Consumer Preview */ 
+/*background-image: -ms-linear-gradient(top left, #88C21E 0%, #2E8938 100%);
+/* Mozilla Firefox */ 
+/*background-image: -moz-linear-gradient(top left, #88C21E 0%, #2E8938 100%);
+/* Opera */ 
+/*background-image: -o-linear-gradient(top left, #88C21E 0%, #2E8938 100%);
+/* Webkit (Safari/Chrome 10) */ 
+/*background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #88C21E), color-stop(1, #2E8938));
+/* Webkit (Chrome 11+) */ 
+/*background-image: -webkit-linear-gradient(top left, #88C21E 0%, #2E8938 100%);
+/* W3C Markup, IE10 Release Preview */ 
+/*background-image: linear-gradient(to bottom right, #88C21E 0%, #2E8938 100%);*/
+}
+
+#txt { margin-left: 20px; text-align: center;}
+table{border: 5px solid #2e8938; 
+
+      padding: 10px 10px; 
+      background: #eeeeee;
+      width: 300px;
+      border-radius: 25px;
+      margin-top: 50px}
+   
+.center{margin-left:auto; 
+        margin-right:auto;}
+td.center{text-align: center;}       
+h1{font-size: 105%; line-height: 1.5em}    
+ul{text-align: left; margin-left: 100px; list-style: url(glass.png);line-height: 1.3em;}
+
+.button{text-align: center;}
+
+/* MailChimp Form Embed Code - Slim - 08/17/2011 */
+#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif;}
+#mc_embed_signup{max-width: 500px;}
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {background-color: #489E24; clear:both; 
+	-moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #489E24) );
+	background:-moz-linear-gradient(center top, #9dce2c 5%, #489E24 100% ); 
+	border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color: #9dce2c; 
+	     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+	     background:-moz-linear-gradient( center top, #489E24 5%, #9dce2c 100% );}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}     
+#mc_embed_signup .clear {clear:none; display:inline;}
+
+#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup input.email {display:block; padding:8px 0; margin:0 0 10px 93px; text-indent:5px; width:58%; min-width:130px;}
+#mc_embed_signup input.button {display:block; width:35%; margin:0 0 10px 150px; min-width:90px;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}

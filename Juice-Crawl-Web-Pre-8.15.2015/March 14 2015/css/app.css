@@ -1,0 +1,297 @@
+body{
+	#padding-top: 50px;
+	font-size: 1.9em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section-0{
+	background-color: #000;
+	padding-top: 20px;
+}
+
+.section-0 .btn{
+	border-radius: 0;
+}
+
+.section-0 img{
+	padding-top: 5%;
+}
+
+.section-0 .border-box{
+	border: 1px solid #ddd;
+	border-radius: 0px;
+	padding: 5px;
+	#background-image: url(../images/footer_lodyas.png);
+	background-image: url(../images/escheresque_ste.png);
+	#background-color: #fff;
+	#margin-left: 5px;
+}
+
+.section-0 .panel{
+	width: 60%;
+	border-radius: 0;
+	text-transform: uppercase;
+	border: none;
+}
+
+.section-0 .panel .panel-heading, .section-0 .panel .panel-body, .section-0 .panel .panel-footer{
+	padding: 3px;
+}
+
+.section-0 .panel .panel-heading{
+	font-size: 0.5em;
+	padding: 5px 3px;
+	letter-spacing: 5px;
+	overflow-wrap: break-word;
+	border: 0;
+	border-radius: 0;
+	background-color: #FF3535;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.section-0 .panel .panel-footer{
+	padding: 0; 
+	border-radius: 0;
+	letter-spacing: 1px;
+	border: 0;
+	#font-weight: bold;
+	font-size: 0.6em;
+	#color: #ddd;
+}
+
+.section-0 .panel .panel-body{
+	font-size: 1.5em;
+	padding: 0;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	background-color: #eee;
+}
+
+.section-0 .time .fa{
+	font-size: 3em;
+}
+
+.section-0 .time p{
+	font-weight: bold;
+}
+
+.border-box h4{
+	#color:;
+}
+.section-0 .time{
+	#padding: 5% 0;
+}
+
+.section-0 .place{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.carousel-indicators{
+	visibility: hidden;
+}
+
+.what-you-get h3{
+	text-transform: uppercase;
+	margin: 40px 0 30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+section > h2{
+	text-transform: uppercase;
+	margin: 50px 0 40px;
+	font-family: 'Raleway', sans-serif;
+	font-variant: small-caps;
+}
+
+.no-padding-left{
+	padding-left: 0;
+}
+
+.about-juicecrawl{
+	#height: 400px;
+	#background-color: #1a244c;
+	background-image: url(../images/restaurant_icons.png);
+}
+
+.about-juicecrawl > p{
+	width: 50%;
+
+}
+
+.about-juicecrawl img{
+	#opacity: 0.2;
+}
+
+.about-juicecrawl .partner-icons{
+	#padding: 40px;
+}
+
+.about-juicecrawl .partner-icons img{
+	height: 120px;
+	margin: 15px auto;
+}
+
+.about-juicecrawl .partner-icons p{
+	min-height: 120px;
+}
+
+.about-juicecrawl .other-icons{
+	padding: 20px;
+}
+
+.about-juicecrawl .other-icons img{
+	width: 20%;
+	height: 100px;
+}
+
+.about-juicecrawl .other-icons p{
+	min-height: 70px;
+}
+
+.about-juicecrawl .value-box{
+	width: 20%;
+	margin: 0 auto;
+}
+
+.about-juicecrawl .value-box .list-group-item{
+	border-radius: 0;
+}
+
+.video{
+	margin: 20px 0;
+}
+
+.icons{
+	width: 85%;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.total-value{
+	text-decoration: underline;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #777;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+.linear li{
+	display: inline;
+	margin: 0 0.6em;
+}
+
+.white{
+	color: #fff;
+}
+
+.vertical-center{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(150%);
+}
+
+.offer{
+	margin: 20px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.color-ccc{
+	color: #ccc;
+}
+
+.carousel-control{
+	visibility: hidden;
+	background: none;
+}
+
+.form-control, .input-group-lg>.form-control, .input-group-lg>.input-group-btn>.btn{
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.media-section{
+	border-top: 3px solid green;
+}
+
+footer{
+	background-image: url(../images/zwartevilt.png);
+	padding: 20px 0;
+}
+
+footer ul{
+	padding-left: 15%;
+	font-size: 2em;
+}
+
+footer p{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ccc;
+}
+
+footer a{
+	color: #BEBEBE;
+}
+
+footer ul li .fa{
+	font-size: 0.5em;
+}
+
+footer ul li .fa.fa-twitter:hover{
+	
+	text-decoration: none;
+	color: #00aced;
+}
+
+footer ul li .fa.fa-instagram:hover{
+	
+	text-decoration: none;
+	color: rgba(131, 180, 233, 1);
+}
+
+
+footer ul li .fa.fa-facebook:hover{
+
+	text-decoration: none;
+	color: #3B5998;
+}
+
+footer ul li .fa.fa-google-plus:hover{
+
+	text-decoration: none;
+	color: red;
+}
+
+footer ul li .fa.fa-youtube:hover{
+
+	text-decoration: none;
+	color: red;
+}
+
+.modal-dialog{
+	margin-top: 200px;
+}
+
+.whos-involved {
+	padding: 20px;
+	border-top: 4px solid green;
+	border-bottom: 4px solid green;
+	background-image: url(../images/footer_lodyas.png);
+}
+
+
+/************ Responsive utils ************/
+
+@media screen and (max-width: 300px){
+
+.section-0{
+	height: 500px;
+}
+
+}
+
+
+

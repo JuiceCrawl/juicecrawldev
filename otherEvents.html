@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '686430014825310');
+fbq('track', "PageView");
+fbq('track', 'ViewContent');
+fbq('track', 'Search');
+fbq('track', 'AddToCart');
+fbq('track', 'AddToWishlist');
+fbq('track', 'InitiateCheckout');
+fbq('track', 'AddPaymentInfo');
+fbq('track', 'Purchase', {value: '0.00', currency: 'USD'});
+fbq('track', 'Lead');
+fbq('track', 'CompleteRegistration');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=686430014825310&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <h1>NYC Healthy Living Events</h1>
+    
+    <div id="content"></div>
+    
+    <script id="cat-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h2>{{date}}</h2>
+        <h3>Genre: {{}}</h3>
+        <h3> {{location}}</h3>
+      </div>
+    </script>
+
+    <!-- Don't need jQuery for Tabletop, but using it for this example -->
+    
+    <script type="text/javascript">
+  window.onload = function() { init() };
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/19gOYLSrsNSRpKQ8PorHWaDwx9wTs3XNzJRaUGM-V5ms/pubhtml';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert("Successfully processed!")
+    console.log(data);
+  }
+</script>
+  </body>
+</html>
+

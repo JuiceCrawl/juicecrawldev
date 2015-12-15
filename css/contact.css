@@ -1,0 +1,174 @@
+#newsletter p {
+font-size: 18px;
+text-align: left;
+}
+
+#newsletter h2{
+    font-weight: 500;
+    text-align: left;
+}
+
+#joinus p {text-align: left; font-size: 18px;}
+
+#joinus h2 {text-align: left;}
+
+#contact-us a {
+    color: #1ecc1a;
+    text-decoration: none;
+}
+
+#contact-us a:hover{
+    color: #fed136;
+    text-decoration: none;
+}
+
+.padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#mc_top form {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+#mc_top .indicates-required {
+    text-align: right;
+    font-size: 11px;
+    margin-right: 4%;
+}
+
+#mc_top .mc-field-group {
+    clear: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+
+#mc_top .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+}
+
+#mc_top .mc-field-group label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#mc_top div#mce-responses {
+    float: left;
+    top: -1.4em;
+    padding: 0em .5em 0em .5em;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 5%;
+    clear: both;
+}
+
+#mc_top .clear {
+    clear: both;
+}
+
+#mc_top .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+}
+
+#mc_top input {
+    border: 1px solid #999;
+    -webkit-appearance: none;
+}
+
+#mc_top .mc-field-group .asterisk {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+#mc_top .asterisk {
+    color: #c60;
+    font-size: 200%;
+}
+
+#mc_top .button {
+    background-color: #1ecc1a;
+    text-decoration: none;
+    clear: both;
+    border: 0 none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+
+
+#mc_top .button:hover {
+    background-color: #fed136;
+    text-decoration: none;
+}
+
+#iconalign li {
+    display: inline;
+    margin: 0 1.2em 0 0;
+}
+
+#socialicons a{
+    color: #BEBEBE;
+}
+
+#socialicons ul li .fa.fa-twitter:hover{
+    
+    text-decoration: none;
+    color: #00aced;
+}
+
+#socialicons ul li .fa.fa-instagram:hover{
+    
+    text-decoration: none;
+    color: rgba(131, 180, 233, 1);
+}
+
+
+#socialicons ul li .fa.fa-facebook:hover{
+
+    text-decoration: none;
+    color: #3B5998;
+}
+
+#socialicons ul li .fa.fa-google-plus:hover{
+
+    text-decoration: none;
+    color: red;
+}
+
+#socialicons ul li .fa.fa-youtube:hover{
+
+    text-decoration: none;
+    color: red;
+}
+
+#iconalign ul{
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    -webkit-padding-start: 0px;
+}
+
+
